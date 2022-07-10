@@ -1,0 +1,11 @@
+<h3>写真投稿</h3>
+
+<%= form_tag('/photos/create',{multipart:true}) do %>
+    <div>
+       <input name='photo_name' type='file'>
+    </div>
+    <div>
+        <input name='photo_exp' >
+    </div>
+    <input type='submit' value='保存'>
+<% end%>
